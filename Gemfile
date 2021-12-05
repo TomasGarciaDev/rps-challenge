@@ -19,3 +19,5 @@ gem "dotenv", "~> 2.7"
 gem "simplecov", "~> 0.21.2"
 
 gem "rubocop", "~> 1.23"
+
+gem "simplecov-console", "~> 0.9.1"
