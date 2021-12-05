@@ -1,7 +1,39 @@
-<center>You won with Rock</center>
+<style>
+body {
+  background-image: url('https://d.newsweek.com/en/full/1657930/pokemon-sword-shield-crown-tundra-calyrex-spectrier.webp?w=790&f=7872daccd3ec1a44a10f9075ff5045f4');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: gray;
+  position: relative;
+  text-align: center;
 
-<center><p>
-<form action="/play">
-  <input type="submit" value="Try again">
-</form>
-</p><center>
+}
+
+div {
+  border-style: solid;
+  border-color: lightblue;
+  background-color: lightblue;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  top: 40%;
+}
+</style>
+
+<body>
+  <div>
+  <% if @rock %>
+    <h1><%= @result.play(@rock, @computer) %></h1>
+  <% end %>
+  <% if @scissor %>
+    <h1><%= @result.play(@scissor, @computer) %></h1>
+  <% end %> 
+  <% if @paper %>
+    <h1><%= @result.play(@paper, @computer) %><h/1>
+  <% end %>
+
+  <form action="/play">
+    <input type="submit" value="Try again">
+  </form>
+  </div>
+</body>

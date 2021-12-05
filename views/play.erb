@@ -1,10 +1,43 @@
-<p>Ok <%= @player_name %>, pick one:</p>
-<form action="/result">
-  <input type="submit" value="Rock">
+<style>
+body {
+  background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/898_f2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: gray;
+  font-family: jokerman;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+
+div {
+  border-style: solid;
+  border-color: lightblue;
+  background-color: lightblue;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  top: 200%;
+}
+
+</style>
+
+<body>
+<div>
+<center><h1>Ok <%= @player.name %>, pick one:</center></h1>
+<center>
+<form action="/choose" method="post">
+  <input type="submit" name="rock" value="Rock">  
 </form>
-<form action="/result">
-  <input type="submit" value="Papper">
+<center>
+<form action="/choose" method="post">
+  <input type="submit" name="paper" value="Paper">
 </form>
-<form action="/result">
-  <input type="submit" value="Scissor">
+</center>
+<center>
+<form action="/choose" method="Post">
+  <input type="submit" name="scissor" value="Scissor">
 </form>
+</center>
+</div>
+<body>

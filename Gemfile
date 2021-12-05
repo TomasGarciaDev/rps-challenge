@@ -13,3 +13,9 @@ gem "sinatra-contrib", "~> 2.1"
 gem "rspec", "~> 3.10"
 
 gem "capybara", "~> 3.36"
+
+gem "dotenv", "~> 2.7"
+
+gem "simplecov", "~> 0.21.2"
+
+gem "rubocop", "~> 1.23"

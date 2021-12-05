@@ -4,7 +4,7 @@ feature 'View options' do
     fill_in :player_name, with: 'Calyrex'
     click_button "Let's play!"
     expect(page).to have_selector(:link_or_button, 'Rock')
-    expect(page).to have_selector(:link_or_button, 'Papper')
+    expect(page).to have_selector(:link_or_button, 'Paper')
     expect(page).to have_selector(:link_or_button, 'Scissor')
   end
 end

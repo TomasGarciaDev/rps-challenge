@@ -1,5 +1,8 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/player.rb'
+require './lib/game.rb'
+require './lib/computer.rb'
 
 class Rps < Sinatra::Base
   configure :development do
@@ -14,17 +17,31 @@ class Rps < Sinatra::Base
   end
   
   post '/name' do
-    session[:player_name] = params[:player_name]
+    $player = Player.new(params[:player_name])
     redirect '/play'
   end
 
   get '/play' do
-    @player_name = session[:player_name]
+    @player = $player
     erb :play
   end
 
+  post '/choose' do
+    # $rock = params[:rock]
+    # $paper = params[:paper]
+    # $scissor = params[:scissor]
+    session[:rock] = params[:rock]
+    session[:paper] = params[:paper]
+    session[:scissor] = params[:scissor]
+    redirect '/result'
+  end
+
   get '/result' do
-    # @player_name = session[:player_name]
+    p @rock = session[:rock]
+    p @paper = session[:paper]
+    p @scissor = session[:scissor]
+    p @computer = Computer.new.weapon
+     @result = Game.new
     erb :result
   end
 
