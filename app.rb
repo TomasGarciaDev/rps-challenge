@@ -37,11 +37,12 @@ class Rps < Sinatra::Base
   end
 
   get '/result' do
-    p @rock = session[:rock]
-    p @paper = session[:paper]
-    p @scissor = session[:scissor]
-    p @computer = Computer.new.weapon
-     @result = Game.new
+    @player = $player
+    @rock = session[:rock]
+    @paper = session[:paper]
+    @scissor = session[:scissor]
+    @computer = Computer.new.weapon
+    @result = Game.new
     erb :result
   end
 
