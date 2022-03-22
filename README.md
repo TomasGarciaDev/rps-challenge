@@ -27,7 +27,7 @@ How does it work?
 <img width="866" alt="Screenshot 2022-03-22 at 16 23 11" src="https://user-images.githubusercontent.com/86299300/159517300-bd6626e7-463d-417c-8384-2406112dc3c1.png">
 
 * Player sees the result of their game and user is given option to play again or end game:
-<img width="720" alt="Screenshot 2022-03-22 at 16 25 06" src="https://user-images.githubusercontent.com/86299300/159517748-51d113f3-3b2f-443b-9efd-209f07dfd6a8.png">
+<img width="672" alt="Screenshot 2022-03-22 at 16 32 35" src="https://user-images.githubusercontent.com/86299300/159519407-25668b41-98dc-4d0f-9ed0-d4f88e9f3fb9.png">
 
 Aims
 ---
